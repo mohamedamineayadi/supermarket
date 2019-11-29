@@ -1,0 +1,523 @@
+/********************************************************************************
+** Form generated from reading UI file 'mainwindow.ui'
+**
+** Created by: Qt User Interface Compiler version 5.13.1
+**
+** WARNING! All changes made in this file will be lost when recompiling UI file!
+********************************************************************************/
+
+#ifndef UI_MAINWINDOW_H
+#define UI_MAINWINDOW_H
+
+#include <QtCore/QVariant>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTabWidget>
+#include <QtWidgets/QTableView>
+#include <QtWidgets/QToolBar>
+#include <QtWidgets/QWidget>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_MainWindow
+{
+public:
+    QWidget *centralWidget;
+    QTabWidget *tabWidget_2;
+    QWidget *tab_4;
+    QTabWidget *tabWidget;
+    QWidget *tab;
+    QLabel *label;
+    QLabel *label_2;
+    QLabel *label_3;
+    QLineEdit *lineEdit_id;
+    QLineEdit *lineEdit_nom;
+    QLineEdit *lineEdit_prenom;
+    QPushButton *pb_ajouter;
+    QLineEdit *lineEdit_sexe;
+    QLabel *label_5;
+    QLineEdit *lineEdit_etat;
+    QLabel *label_6;
+    QLineEdit *lineEdit_adresse;
+    QLabel *label_7;
+    QLineEdit *lineEdit_departement;
+    QLabel *label_8;
+    QLineEdit *lineEdit_salaire;
+    QLabel *label_9;
+    QLineEdit *lineEdit_commision;
+    QLineEdit *lineEdit_nbr_prs;
+    QLineEdit *lineEdit_nbr_abs;
+    QLabel *label_10;
+    QLabel *label_11;
+    QLabel *label_12;
+    QWidget *tab_2;
+    QTableView *tabinformation;
+    QLabel *label_20;
+    QPushButton *pushButton_3;
+    QLineEdit *lineEdit_information;
+    QPushButton *pushButton_5;
+    QWidget *tab_3;
+    QLineEdit *lineEdit_id_2;
+    QLabel *label_4;
+    QPushButton *pb_supprimer;
+    QWidget *tab_9;
+    QLineEdit *lineEdit;
+    QLineEdit *lineEdit_2;
+    QLineEdit *lineEdit_3;
+    QLineEdit *lineEdit_4;
+    QLineEdit *lineEdit_10;
+    QLineEdit *lineEdit_9;
+    QLineEdit *lineEdit_8;
+    QLineEdit *lineEdit_7;
+    QLineEdit *lineEdit_6;
+    QLineEdit *lineEdit_11;
+    QLineEdit *lineEdit_51;
+    QLabel *label_21;
+    QLabel *label_22;
+    QLabel *label_23;
+    QLabel *label_24;
+    QLabel *label_25;
+    QLabel *label_26;
+    QLabel *label_27;
+    QLabel *label_28;
+    QLabel *label_29;
+    QLabel *label_30;
+    QLabel *label_31;
+    QPushButton *pushButton_4;
+    QWidget *tab_5;
+    QTabWidget *tabWidget_3;
+    QWidget *tab_6;
+    QLabel *label_13;
+    QLabel *label_14;
+    QLabel *label_15;
+    QLabel *label_16;
+    QPushButton *pb_ajouter_2;
+    QLineEdit *lineEdit_id_3;
+    QLineEdit *lineEdit_nbr_conge;
+    QLineEdit *lineEdit_debut_conge;
+    QLineEdit *lineEdit_fin_conge;
+    QLabel *label_18;
+    QLineEdit *lineEdit_id_conge;
+    QWidget *tab_7;
+    QTableView *tabconge;
+    QLineEdit *lineEdit_conge;
+    QPushButton *pushButton_2;
+    QLabel *label_19;
+    QPushButton *pushButton_6;
+    QWidget *tab_8;
+    QLineEdit *lineEdit_id_4;
+    QLabel *label_17;
+    QPushButton *pushButton;
+    QWidget *tab_10;
+    QLabel *label_32;
+    QLabel *label_33;
+    QLabel *label_34;
+    QLabel *label_35;
+    QLabel *label_36;
+    QPushButton *pushButton_7;
+    QLineEdit *lineEdit_5;
+    QLineEdit *lineEdit_12;
+    QLineEdit *lineEdit_13;
+    QLineEdit *lineEdit_14;
+    QLineEdit *lineEdit_15;
+    QMenuBar *menuBar;
+    QToolBar *mainToolBar;
+    QStatusBar *statusBar;
+
+    void setupUi(QMainWindow *MainWindow)
+    {
+        if (MainWindow->objectName().isEmpty())
+            MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
+        MainWindow->resize(958, 546);
+        centralWidget = new QWidget(MainWindow);
+        centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
+        tabWidget_2 = new QTabWidget(centralWidget);
+        tabWidget_2->setObjectName(QString::fromUtf8("tabWidget_2"));
+        tabWidget_2->setGeometry(QRect(20, 10, 901, 361));
+        tab_4 = new QWidget();
+        tab_4->setObjectName(QString::fromUtf8("tab_4"));
+        tabWidget = new QTabWidget(tab_4);
+        tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
+        tabWidget->setGeometry(QRect(10, 10, 871, 321));
+        tab = new QWidget();
+        tab->setObjectName(QString::fromUtf8("tab"));
+        label = new QLabel(tab);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(20, 30, 61, 16));
+        label_2 = new QLabel(tab);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(20, 90, 47, 13));
+        label_3 = new QLabel(tab);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setGeometry(QRect(20, 150, 47, 13));
+        lineEdit_id = new QLineEdit(tab);
+        lineEdit_id->setObjectName(QString::fromUtf8("lineEdit_id"));
+        lineEdit_id->setGeometry(QRect(130, 30, 113, 20));
+        lineEdit_nom = new QLineEdit(tab);
+        lineEdit_nom->setObjectName(QString::fromUtf8("lineEdit_nom"));
+        lineEdit_nom->setGeometry(QRect(130, 90, 113, 20));
+        lineEdit_prenom = new QLineEdit(tab);
+        lineEdit_prenom->setObjectName(QString::fromUtf8("lineEdit_prenom"));
+        lineEdit_prenom->setGeometry(QRect(130, 150, 113, 20));
+        pb_ajouter = new QPushButton(tab);
+        pb_ajouter->setObjectName(QString::fromUtf8("pb_ajouter"));
+        pb_ajouter->setGeometry(QRect(600, 260, 75, 23));
+        lineEdit_sexe = new QLineEdit(tab);
+        lineEdit_sexe->setObjectName(QString::fromUtf8("lineEdit_sexe"));
+        lineEdit_sexe->setGeometry(QRect(130, 200, 113, 20));
+        label_5 = new QLabel(tab);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setGeometry(QRect(20, 200, 47, 13));
+        lineEdit_etat = new QLineEdit(tab);
+        lineEdit_etat->setObjectName(QString::fromUtf8("lineEdit_etat"));
+        lineEdit_etat->setGeometry(QRect(390, 30, 113, 20));
+        label_6 = new QLabel(tab);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_6->setGeometry(QRect(300, 30, 47, 13));
+        lineEdit_adresse = new QLineEdit(tab);
+        lineEdit_adresse->setObjectName(QString::fromUtf8("lineEdit_adresse"));
+        lineEdit_adresse->setGeometry(QRect(390, 90, 113, 20));
+        label_7 = new QLabel(tab);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setGeometry(QRect(300, 90, 47, 13));
+        lineEdit_departement = new QLineEdit(tab);
+        lineEdit_departement->setObjectName(QString::fromUtf8("lineEdit_departement"));
+        lineEdit_departement->setGeometry(QRect(390, 150, 113, 20));
+        label_8 = new QLabel(tab);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setGeometry(QRect(300, 150, 71, 16));
+        lineEdit_salaire = new QLineEdit(tab);
+        lineEdit_salaire->setObjectName(QString::fromUtf8("lineEdit_salaire"));
+        lineEdit_salaire->setGeometry(QRect(390, 200, 113, 20));
+        label_9 = new QLabel(tab);
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+        label_9->setGeometry(QRect(300, 200, 71, 16));
+        lineEdit_commision = new QLineEdit(tab);
+        lineEdit_commision->setObjectName(QString::fromUtf8("lineEdit_commision"));
+        lineEdit_commision->setGeometry(QRect(670, 30, 113, 20));
+        lineEdit_nbr_prs = new QLineEdit(tab);
+        lineEdit_nbr_prs->setObjectName(QString::fromUtf8("lineEdit_nbr_prs"));
+        lineEdit_nbr_prs->setGeometry(QRect(670, 90, 113, 20));
+        lineEdit_nbr_abs = new QLineEdit(tab);
+        lineEdit_nbr_abs->setObjectName(QString::fromUtf8("lineEdit_nbr_abs"));
+        lineEdit_nbr_abs->setGeometry(QRect(670, 150, 113, 20));
+        label_10 = new QLabel(tab);
+        label_10->setObjectName(QString::fromUtf8("label_10"));
+        label_10->setGeometry(QRect(560, 30, 71, 16));
+        label_11 = new QLabel(tab);
+        label_11->setObjectName(QString::fromUtf8("label_11"));
+        label_11->setGeometry(QRect(560, 90, 111, 16));
+        label_12 = new QLabel(tab);
+        label_12->setObjectName(QString::fromUtf8("label_12"));
+        label_12->setGeometry(QRect(560, 150, 111, 16));
+        tabWidget->addTab(tab, QString());
+        tab_2 = new QWidget();
+        tab_2->setObjectName(QString::fromUtf8("tab_2"));
+        tabinformation = new QTableView(tab_2);
+        tabinformation->setObjectName(QString::fromUtf8("tabinformation"));
+        tabinformation->setGeometry(QRect(10, 10, 841, 191));
+        label_20 = new QLabel(tab_2);
+        label_20->setObjectName(QString::fromUtf8("label_20"));
+        label_20->setGeometry(QRect(30, 230, 61, 16));
+        pushButton_3 = new QPushButton(tab_2);
+        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        pushButton_3->setGeometry(QRect(220, 230, 75, 23));
+        lineEdit_information = new QLineEdit(tab_2);
+        lineEdit_information->setObjectName(QString::fromUtf8("lineEdit_information"));
+        lineEdit_information->setGeometry(QRect(100, 230, 113, 20));
+        pushButton_5 = new QPushButton(tab_2);
+        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+        pushButton_5->setGeometry(QRect(210, 260, 75, 23));
+        tabWidget->addTab(tab_2, QString());
+        tab_3 = new QWidget();
+        tab_3->setObjectName(QString::fromUtf8("tab_3"));
+        lineEdit_id_2 = new QLineEdit(tab_3);
+        lineEdit_id_2->setObjectName(QString::fromUtf8("lineEdit_id_2"));
+        lineEdit_id_2->setGeometry(QRect(140, 30, 113, 20));
+        label_4 = new QLabel(tab_3);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setGeometry(QRect(20, 30, 61, 16));
+        pb_supprimer = new QPushButton(tab_3);
+        pb_supprimer->setObjectName(QString::fromUtf8("pb_supprimer"));
+        pb_supprimer->setGeometry(QRect(240, 140, 75, 23));
+        tabWidget->addTab(tab_3, QString());
+        tab_9 = new QWidget();
+        tab_9->setObjectName(QString::fromUtf8("tab_9"));
+        lineEdit = new QLineEdit(tab_9);
+        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        lineEdit->setGeometry(QRect(150, 30, 113, 20));
+        lineEdit_2 = new QLineEdit(tab_9);
+        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+        lineEdit_2->setGeometry(QRect(150, 60, 113, 20));
+        lineEdit_3 = new QLineEdit(tab_9);
+        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
+        lineEdit_3->setGeometry(QRect(150, 90, 113, 20));
+        lineEdit_4 = new QLineEdit(tab_9);
+        lineEdit_4->setObjectName(QString::fromUtf8("lineEdit_4"));
+        lineEdit_4->setGeometry(QRect(150, 120, 113, 20));
+        lineEdit_10 = new QLineEdit(tab_9);
+        lineEdit_10->setObjectName(QString::fromUtf8("lineEdit_10"));
+        lineEdit_10->setGeometry(QRect(530, 120, 113, 20));
+        lineEdit_9 = new QLineEdit(tab_9);
+        lineEdit_9->setObjectName(QString::fromUtf8("lineEdit_9"));
+        lineEdit_9->setGeometry(QRect(530, 90, 113, 20));
+        lineEdit_8 = new QLineEdit(tab_9);
+        lineEdit_8->setObjectName(QString::fromUtf8("lineEdit_8"));
+        lineEdit_8->setGeometry(QRect(530, 60, 113, 20));
+        lineEdit_7 = new QLineEdit(tab_9);
+        lineEdit_7->setObjectName(QString::fromUtf8("lineEdit_7"));
+        lineEdit_7->setGeometry(QRect(530, 30, 113, 20));
+        lineEdit_6 = new QLineEdit(tab_9);
+        lineEdit_6->setObjectName(QString::fromUtf8("lineEdit_6"));
+        lineEdit_6->setGeometry(QRect(150, 180, 113, 20));
+        lineEdit_11 = new QLineEdit(tab_9);
+        lineEdit_11->setObjectName(QString::fromUtf8("lineEdit_11"));
+        lineEdit_11->setGeometry(QRect(530, 150, 113, 20));
+        lineEdit_51 = new QLineEdit(tab_9);
+        lineEdit_51->setObjectName(QString::fromUtf8("lineEdit_51"));
+        lineEdit_51->setGeometry(QRect(150, 150, 113, 20));
+        label_21 = new QLabel(tab_9);
+        label_21->setObjectName(QString::fromUtf8("label_21"));
+        label_21->setGeometry(QRect(80, 30, 47, 13));
+        label_22 = new QLabel(tab_9);
+        label_22->setObjectName(QString::fromUtf8("label_22"));
+        label_22->setGeometry(QRect(90, 90, 47, 13));
+        label_23 = new QLabel(tab_9);
+        label_23->setObjectName(QString::fromUtf8("label_23"));
+        label_23->setGeometry(QRect(90, 120, 47, 13));
+        label_24 = new QLabel(tab_9);
+        label_24->setObjectName(QString::fromUtf8("label_24"));
+        label_24->setGeometry(QRect(90, 150, 47, 13));
+        label_25 = new QLabel(tab_9);
+        label_25->setObjectName(QString::fromUtf8("label_25"));
+        label_25->setGeometry(QRect(90, 180, 47, 13));
+        label_26 = new QLabel(tab_9);
+        label_26->setObjectName(QString::fromUtf8("label_26"));
+        label_26->setGeometry(QRect(440, 160, 47, 13));
+        label_27 = new QLabel(tab_9);
+        label_27->setObjectName(QString::fromUtf8("label_27"));
+        label_27->setGeometry(QRect(440, 120, 47, 13));
+        label_28 = new QLabel(tab_9);
+        label_28->setObjectName(QString::fromUtf8("label_28"));
+        label_28->setGeometry(QRect(440, 100, 47, 13));
+        label_29 = new QLabel(tab_9);
+        label_29->setObjectName(QString::fromUtf8("label_29"));
+        label_29->setGeometry(QRect(440, 70, 47, 13));
+        label_30 = new QLabel(tab_9);
+        label_30->setObjectName(QString::fromUtf8("label_30"));
+        label_30->setGeometry(QRect(440, 40, 47, 13));
+        label_31 = new QLabel(tab_9);
+        label_31->setObjectName(QString::fromUtf8("label_31"));
+        label_31->setGeometry(QRect(90, 70, 47, 13));
+        pushButton_4 = new QPushButton(tab_9);
+        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        pushButton_4->setGeometry(QRect(510, 240, 75, 23));
+        tabWidget->addTab(tab_9, QString());
+        tabWidget_2->addTab(tab_4, QString());
+        tab_5 = new QWidget();
+        tab_5->setObjectName(QString::fromUtf8("tab_5"));
+        tabWidget_3 = new QTabWidget(tab_5);
+        tabWidget_3->setObjectName(QString::fromUtf8("tabWidget_3"));
+        tabWidget_3->setGeometry(QRect(6, 9, 871, 321));
+        tab_6 = new QWidget();
+        tab_6->setObjectName(QString::fromUtf8("tab_6"));
+        label_13 = new QLabel(tab_6);
+        label_13->setObjectName(QString::fromUtf8("label_13"));
+        label_13->setGeometry(QRect(40, 140, 61, 20));
+        label_14 = new QLabel(tab_6);
+        label_14->setObjectName(QString::fromUtf8("label_14"));
+        label_14->setGeometry(QRect(390, 60, 131, 21));
+        label_15 = new QLabel(tab_6);
+        label_15->setObjectName(QString::fromUtf8("label_15"));
+        label_15->setGeometry(QRect(440, 130, 81, 16));
+        label_16 = new QLabel(tab_6);
+        label_16->setObjectName(QString::fromUtf8("label_16"));
+        label_16->setGeometry(QRect(440, 170, 71, 16));
+        pb_ajouter_2 = new QPushButton(tab_6);
+        pb_ajouter_2->setObjectName(QString::fromUtf8("pb_ajouter_2"));
+        pb_ajouter_2->setGeometry(QRect(540, 240, 75, 23));
+        lineEdit_id_3 = new QLineEdit(tab_6);
+        lineEdit_id_3->setObjectName(QString::fromUtf8("lineEdit_id_3"));
+        lineEdit_id_3->setGeometry(QRect(160, 140, 113, 20));
+        lineEdit_nbr_conge = new QLineEdit(tab_6);
+        lineEdit_nbr_conge->setObjectName(QString::fromUtf8("lineEdit_nbr_conge"));
+        lineEdit_nbr_conge->setGeometry(QRect(520, 60, 113, 20));
+        lineEdit_debut_conge = new QLineEdit(tab_6);
+        lineEdit_debut_conge->setObjectName(QString::fromUtf8("lineEdit_debut_conge"));
+        lineEdit_debut_conge->setGeometry(QRect(520, 130, 113, 20));
+        lineEdit_fin_conge = new QLineEdit(tab_6);
+        lineEdit_fin_conge->setObjectName(QString::fromUtf8("lineEdit_fin_conge"));
+        lineEdit_fin_conge->setGeometry(QRect(520, 170, 113, 20));
+        label_18 = new QLabel(tab_6);
+        label_18->setObjectName(QString::fromUtf8("label_18"));
+        label_18->setGeometry(QRect(40, 80, 111, 16));
+        lineEdit_id_conge = new QLineEdit(tab_6);
+        lineEdit_id_conge->setObjectName(QString::fromUtf8("lineEdit_id_conge"));
+        lineEdit_id_conge->setGeometry(QRect(160, 80, 113, 20));
+        tabWidget_3->addTab(tab_6, QString());
+        tab_7 = new QWidget();
+        tab_7->setObjectName(QString::fromUtf8("tab_7"));
+        tabconge = new QTableView(tab_7);
+        tabconge->setObjectName(QString::fromUtf8("tabconge"));
+        tabconge->setGeometry(QRect(10, -10, 851, 231));
+        lineEdit_conge = new QLineEdit(tab_7);
+        lineEdit_conge->setObjectName(QString::fromUtf8("lineEdit_conge"));
+        lineEdit_conge->setGeometry(QRect(130, 250, 113, 20));
+        pushButton_2 = new QPushButton(tab_7);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(250, 250, 75, 23));
+        label_19 = new QLabel(tab_7);
+        label_19->setObjectName(QString::fromUtf8("label_19"));
+        label_19->setGeometry(QRect(60, 250, 61, 16));
+        pushButton_6 = new QPushButton(tab_7);
+        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
+        pushButton_6->setGeometry(QRect(360, 250, 75, 23));
+        tabWidget_3->addTab(tab_7, QString());
+        tab_8 = new QWidget();
+        tab_8->setObjectName(QString::fromUtf8("tab_8"));
+        lineEdit_id_4 = new QLineEdit(tab_8);
+        lineEdit_id_4->setObjectName(QString::fromUtf8("lineEdit_id_4"));
+        lineEdit_id_4->setGeometry(QRect(140, 80, 113, 20));
+        label_17 = new QLabel(tab_8);
+        label_17->setObjectName(QString::fromUtf8("label_17"));
+        label_17->setGeometry(QRect(70, 80, 81, 16));
+        pushButton = new QPushButton(tab_8);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(250, 190, 75, 23));
+        tabWidget_3->addTab(tab_8, QString());
+        tab_10 = new QWidget();
+        tab_10->setObjectName(QString::fromUtf8("tab_10"));
+        label_32 = new QLabel(tab_10);
+        label_32->setObjectName(QString::fromUtf8("label_32"));
+        label_32->setGeometry(QRect(26, 60, 101, 20));
+        label_33 = new QLabel(tab_10);
+        label_33->setObjectName(QString::fromUtf8("label_33"));
+        label_33->setGeometry(QRect(366, 40, 131, 20));
+        label_34 = new QLabel(tab_10);
+        label_34->setObjectName(QString::fromUtf8("label_34"));
+        label_34->setGeometry(QRect(386, 80, 111, 20));
+        label_35 = new QLabel(tab_10);
+        label_35->setObjectName(QString::fromUtf8("label_35"));
+        label_35->setGeometry(QRect(416, 150, 91, 20));
+        label_36 = new QLabel(tab_10);
+        label_36->setObjectName(QString::fromUtf8("label_36"));
+        label_36->setGeometry(QRect(46, 110, 81, 20));
+        pushButton_7 = new QPushButton(tab_10);
+        pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
+        pushButton_7->setGeometry(QRect(290, 210, 75, 23));
+        lineEdit_5 = new QLineEdit(tab_10);
+        lineEdit_5->setObjectName(QString::fromUtf8("lineEdit_5"));
+        lineEdit_5->setGeometry(QRect(150, 50, 113, 20));
+        lineEdit_12 = new QLineEdit(tab_10);
+        lineEdit_12->setObjectName(QString::fromUtf8("lineEdit_12"));
+        lineEdit_12->setGeometry(QRect(520, 150, 113, 20));
+        lineEdit_13 = new QLineEdit(tab_10);
+        lineEdit_13->setObjectName(QString::fromUtf8("lineEdit_13"));
+        lineEdit_13->setGeometry(QRect(510, 80, 113, 20));
+        lineEdit_14 = new QLineEdit(tab_10);
+        lineEdit_14->setObjectName(QString::fromUtf8("lineEdit_14"));
+        lineEdit_14->setGeometry(QRect(510, 40, 113, 20));
+        lineEdit_15 = new QLineEdit(tab_10);
+        lineEdit_15->setObjectName(QString::fromUtf8("lineEdit_15"));
+        lineEdit_15->setGeometry(QRect(150, 110, 113, 20));
+        tabWidget_3->addTab(tab_10, QString());
+        tabWidget_2->addTab(tab_5, QString());
+        MainWindow->setCentralWidget(centralWidget);
+        menuBar = new QMenuBar(MainWindow);
+        menuBar->setObjectName(QString::fromUtf8("menuBar"));
+        menuBar->setGeometry(QRect(0, 0, 958, 21));
+        MainWindow->setMenuBar(menuBar);
+        mainToolBar = new QToolBar(MainWindow);
+        mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
+        MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
+        statusBar = new QStatusBar(MainWindow);
+        statusBar->setObjectName(QString::fromUtf8("statusBar"));
+        MainWindow->setStatusBar(statusBar);
+
+        retranslateUi(MainWindow);
+
+        tabWidget_2->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(3);
+        tabWidget_3->setCurrentIndex(3);
+
+
+        QMetaObject::connectSlotsByName(MainWindow);
+    } // setupUi
+
+    void retranslateUi(QMainWindow *MainWindow)
+    {
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Gestion du personnel", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "Identifiant", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "Nom", nullptr));
+        label_3->setText(QCoreApplication::translate("MainWindow", "Pr\303\251nom", nullptr));
+        pb_ajouter->setText(QCoreApplication::translate("MainWindow", "Ajouter", nullptr));
+        label_5->setText(QCoreApplication::translate("MainWindow", "Sexe", nullptr));
+        label_6->setText(QCoreApplication::translate("MainWindow", "Etat ", nullptr));
+        label_7->setText(QCoreApplication::translate("MainWindow", "Adresse", nullptr));
+        label_8->setText(QCoreApplication::translate("MainWindow", "Departement", nullptr));
+        label_9->setText(QCoreApplication::translate("MainWindow", " Salaire", nullptr));
+        label_10->setText(QCoreApplication::translate("MainWindow", " Commision", nullptr));
+        label_11->setText(QCoreApplication::translate("MainWindow", "Nombre de presence", nullptr));
+        label_12->setText(QCoreApplication::translate("MainWindow", "Nombre d'absence", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("MainWindow", "Ajouter", nullptr));
+        label_20->setText(QCoreApplication::translate("MainWindow", "rechercher", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("MainWindow", "recherche", nullptr));
+        pushButton_5->setText(QCoreApplication::translate("MainWindow", "tri", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MainWindow", "Afficher", nullptr));
+        label_4->setText(QCoreApplication::translate("MainWindow", "Identifiant", nullptr));
+        pb_supprimer->setText(QCoreApplication::translate("MainWindow", "Supprimer", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("MainWindow", "Supprimer", nullptr));
+        label_21->setText(QCoreApplication::translate("MainWindow", "Identifiant", nullptr));
+        label_22->setText(QCoreApplication::translate("MainWindow", "prenom", nullptr));
+        label_23->setText(QCoreApplication::translate("MainWindow", "sexe", nullptr));
+        label_24->setText(QCoreApplication::translate("MainWindow", "etat", nullptr));
+        label_25->setText(QCoreApplication::translate("MainWindow", "adresse", nullptr));
+        label_26->setText(QCoreApplication::translate("MainWindow", "nbr_abs", nullptr));
+        label_27->setText(QCoreApplication::translate("MainWindow", "nbr_prs", nullptr));
+        label_28->setText(QCoreApplication::translate("MainWindow", "commision", nullptr));
+        label_29->setText(QCoreApplication::translate("MainWindow", "salaire", nullptr));
+        label_30->setText(QCoreApplication::translate("MainWindow", "departement", nullptr));
+        label_31->setText(QCoreApplication::translate("MainWindow", "Nom", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("MainWindow", "modifier", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_9), QCoreApplication::translate("MainWindow", "Page", nullptr));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_4), QCoreApplication::translate("MainWindow", "Information", nullptr));
+        label_13->setText(QCoreApplication::translate("MainWindow", "Identifiant", nullptr));
+        label_14->setText(QCoreApplication::translate("MainWindow", "Nombre de jour de conge", nullptr));
+        label_15->setText(QCoreApplication::translate("MainWindow", "Date de debut", nullptr));
+        label_16->setText(QCoreApplication::translate("MainWindow", "Date de fin", nullptr));
+        pb_ajouter_2->setText(QCoreApplication::translate("MainWindow", "Ajouter", nullptr));
+        lineEdit_fin_conge->setText(QString());
+        label_18->setText(QCoreApplication::translate("MainWindow", "Identifiant du conge", nullptr));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QCoreApplication::translate("MainWindow", "Ajouter", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MainWindow", "recherche", nullptr));
+        label_19->setText(QCoreApplication::translate("MainWindow", "rechercher", nullptr));
+        pushButton_6->setText(QCoreApplication::translate("MainWindow", "trie", nullptr));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QCoreApplication::translate("MainWindow", "Afficher", nullptr));
+        label_17->setText(QCoreApplication::translate("MainWindow", "Identifiant", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "Supprimer", nullptr));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_8), QCoreApplication::translate("MainWindow", "Supprimer", nullptr));
+        label_32->setText(QCoreApplication::translate("MainWindow", "Identifiant du conge", nullptr));
+        label_33->setText(QCoreApplication::translate("MainWindow", "Nombre de jour de conge", nullptr));
+        label_34->setText(QCoreApplication::translate("MainWindow", "Date de debut", nullptr));
+        label_35->setText(QCoreApplication::translate("MainWindow", "Date de fin", nullptr));
+        label_36->setText(QCoreApplication::translate("MainWindow", "Identifiant", nullptr));
+        pushButton_7->setText(QCoreApplication::translate("MainWindow", "Modifier", nullptr));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_10), QCoreApplication::translate("MainWindow", "Page", nullptr));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_5), QCoreApplication::translate("MainWindow", "Cong\303\251", nullptr));
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class MainWindow: public Ui_MainWindow {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // UI_MAINWINDOW_H
