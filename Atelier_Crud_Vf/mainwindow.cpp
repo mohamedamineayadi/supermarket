@@ -3,6 +3,8 @@
 #include "client.h"
 #include "fidelite.h"
 #include <QMessageBox>
+#include <QSystemTrayIcon>
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -11,6 +13,9 @@ ui->setupUi(this);
   ui->tabclient->setModel(tmpclient.afficher());
   ui->tabclient_2->setModel(tmpfidelite .afficher());//refresh
 
+  mysystem=new QSystemTrayIcon(this);
+  mysystem->setIcon(QIcon(":/icon.png"));
+  mysystem->setVisible(true);
 }
 
 MainWindow::~MainWindow()
@@ -31,6 +36,8 @@ void MainWindow::on_pb_ajouter_clicked()
   bool test=e.ajouter();
   if(test)
 {   ui->tabclient->setModel(tmpclient.afficher());//refresh
+      mysystem->showMessage(tr("Notification"),tr("ajout d'un client avec succe"));
+
 QMessageBox::information(nullptr, QObject::tr("Ajouter un client"),
                   QObject::tr("client ajouté.\n"
                               "Click Cancel to exit."), QMessageBox::Cancel);
@@ -90,17 +97,17 @@ QMessageBox::information(nullptr, QObject::tr("Ajouter un client"),
 
 void MainWindow::on_pb_supprimer_2_clicked()
 {
-    int code = ui->lineEdit_code->text().toInt();
+    int code = ui->lineEdit_id_4->text().toInt();
     bool test=tmpfidelite.supprimer(code);
     if(test)
     {ui->tabclient_2->setModel(tmpfidelite .afficher());//refresh
-        QMessageBox::information(nullptr, QObject::tr("Supprimer un client"),
-                    QObject::tr("client supprimé.\n"
+        QMessageBox::information(nullptr, QObject::tr("Supprimer une carte_fidelite"),
+                    QObject::tr("carte_fidelite supprimé.\n"
                                 "Click Cancel to exit."), QMessageBox::Cancel);
 
     }
     else
-        QMessageBox::critical(nullptr, QObject::tr("Supprimer un client"),
+        QMessageBox::critical(nullptr, QObject::tr("Supprimer une carte_fidelite"),
                     QObject::tr("Erreur !.\n"
                                 "Click Cancel to exit."), QMessageBox::Cancel);
 }
@@ -122,7 +129,7 @@ void MainWindow::on_pushButton_2_clicked()
 
 void MainWindow::on_pushButton_3_clicked()
 {
-    int id = ui->lineEdit_id_2->text().toInt();
+    int id = ui->lineEdit_id_8->text().toInt();
 
     QString nom= ui->lineEdit_nom_2->text();
     QString prenom= ui->lineEdit_prenom_2->text();
@@ -154,4 +161,23 @@ void MainWindow::on_pushButton_5_clicked()
 void MainWindow::on_pushButton_4_clicked()
 {
       ui->tabclient_2->setModel(tmpfidelite.trie_points());
+}
+
+void MainWindow::on_pb_modifier_4_clicked()
+{
+    int code = ui->lineEdit_code_2->text().toInt();
+int points = ui->lineEdit_code_3->text().toInt();
+
+
+     bool test = tmpfidelite.modifierfidelite(code,points);
+         if (test)
+         {
+              ui->tabclient_2->setModel( tmpfidelite.afficher());
+
+             QMessageBox::information(nullptr, QObject::tr("modifier avec sucess !"),
+                         QObject::tr( "Click Cancel to exit."), QMessageBox::Cancel);
+         }
+         else
+             QMessageBox::critical(nullptr, QObject::tr("modifier non sucess !"),
+                         QObject::tr( "Click Cancel to exit."), QMessageBox::Cancel);
 }

@@ -29,7 +29,7 @@ bool client::ajouter()
 {
 QSqlQuery query;
 QString res= QString::number(id);
-query.prepare("INSERT INTO client (ID, NOM, PRENOM,SEXE,MAIL,TEL) "
+query.prepare("INSERT INTO client (ID, NOM, PRENOM,SEXE,TEL,MAIL) "
                     "VALUES (:id, :nom, :prenom,:sexe,:tel,:mail)");
 query.bindValue(":id", res);
 query.bindValue(":nom", nom);

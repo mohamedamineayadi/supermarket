@@ -44,19 +44,19 @@ bool fidelite::supprimer(int code)
 {
 QSqlQuery query;
 QString res= QString::number(code);
-query.prepare("Delete from carte_fidelite where CODE = code ");
+query.prepare("Delete from carte_fidelite where CODE =: code ");
 query.bindValue(":code", res);
 return    query.exec();
 }
 
-bool fidelite:: modifierfidelite (int points,int code)
+bool fidelite:: modifierfidelite (int code,int points)
 {
-    QString res = QString :: number (points) ;
-    QString res2 = QString :: number (code) ;
+    QString res = QString :: number (code) ;
+    QString res2 = QString :: number (points) ;
         QSqlQuery q;
-         q.prepare("UPDATE carte_fidelite set code =:code,points=:points");
-         q.bindValue(":points",res);
-        q.bindValue(":code",res2);
+         q.prepare("UPDATE carte_fidelite set CODE =:code,POINTS=:points where CODE=:code ");
+         q.bindValue(":code",res);
+        q.bindValue(":points",res2);
 
 
 

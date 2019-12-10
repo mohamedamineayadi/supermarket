@@ -7,6 +7,7 @@
 namespace Ui {
 class MainWindow;
 }
+class QSystemTrayIcon;
 
 class MainWindow : public QMainWindow
 {
@@ -44,10 +45,13 @@ private slots:
 
     void on_pushButton_5_clicked();
 
+    void on_pb_modifier_4_clicked();
+
 private:
     Ui::MainWindow *ui;
     client tmpclient;
     fidelite tmpfidelite;
+     QSystemTrayIcon * mysystem;
 };
 
 #endif // MAINWINDOW_H
