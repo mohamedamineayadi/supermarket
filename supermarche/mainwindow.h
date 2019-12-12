@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include"personnel.h"
 #include"client_fidelite.h"
+#include "prodcat.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -21,9 +23,13 @@ private slots:
 
     void on_pushButton_4_clicked();
 
+    void on_pushButton_3_clicked();
+
 private:
     Ui::MainWindow *ui;
     personnel *per;
     client_fidelite *client;
+    prodcat *pro;
+
 };
 #endif // MAINWINDOW_H

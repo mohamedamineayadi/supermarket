@@ -27,3 +27,9 @@ void MainWindow::on_pushButton_4_clicked()
     client = new client_fidelite(this) ;
     client->show() ;
 }
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    pro = new prodcat(this);
+    pro->show();
+}

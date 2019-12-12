@@ -18,6 +18,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    categorie.cpp \
     client.cpp \
     client_fidelite.cpp \
     conge.cpp \
@@ -26,9 +27,12 @@ SOURCES += \
     information.cpp \
     main.cpp \
     mainwindow.cpp \
-    personnel.cpp
+    personnel.cpp \
+    prodcat.cpp \
+    produit.cpp
 
 HEADERS += \
+    categorie.h \
     client.h \
     client_fidelite.h \
     conge.h \
@@ -36,12 +40,15 @@ HEADERS += \
     fidelite.h \
     information.h \
     mainwindow.h \
-    personnel.h
+    personnel.h \
+    prodcat.h \
+    produit.h
 
 FORMS += \
     client_fidelite.ui \
     mainwindow.ui \
-    personnel.ui
+    personnel.ui \
+    prodcat.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
