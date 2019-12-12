@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>914</width>
-    <height>535</height>
+    <width>831</width>
+    <height>459</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -28,7 +28,7 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../Desktop/caissesv.jpg</normaloff>../../Desktop/caissesv.jpg</iconset>
+      <normaloff>../caissesv.jpg</normaloff>../caissesv.jpg</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -51,7 +51,7 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../Desktop/employesv.jpg</normaloff>../../Desktop/employesv.jpg</iconset>
+      <normaloff>../employesv.jpg</normaloff>../employesv.jpg</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -74,7 +74,7 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../Desktop/produitv.jpg</normaloff>../../Desktop/produitv.jpg</iconset>
+      <normaloff>../produitv.jpg</normaloff>../produitv.jpg</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -97,7 +97,7 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../Desktop/clientsv.jpg</normaloff>../../Desktop/clientsv.jpg</iconset>
+      <normaloff>../clientsv.jpg</normaloff>../clientsv.jpg</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -120,7 +120,7 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../Desktop/fournisseurv.jpg</normaloff>../../Desktop/fournisseurv.jpg</iconset>
+      <normaloff>../fournisseurv.jpg</normaloff>../fournisseurv.jpg</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -132,17 +132,17 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>-50</y>
-      <width>811</width>
-      <height>641</height>
+      <x>740</x>
+      <y>310</y>
+      <width>181</width>
+      <height>371</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../Desktop/background.jpg</pixmap>
+     <pixmap>../background.jpg</pixmap>
     </property>
    </widget>
    <zorder>label</zorder>
@@ -157,8 +157,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>914</width>
-     <height>21</height>
+     <width>831</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>

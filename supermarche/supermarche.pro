@@ -21,9 +21,12 @@ SOURCES += \
     categorie.cpp \
     client.cpp \
     client_fidelite.cpp \
+    commandes_achats.cpp \
     conge.cpp \
     connexion.cpp \
     fidelite.cpp \
+    fournisseur.cpp \
+    gestionfourcmd.cpp \
     information.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -35,9 +38,12 @@ HEADERS += \
     categorie.h \
     client.h \
     client_fidelite.h \
+    commandes_achats.h \
     conge.h \
     connexion.h \
     fidelite.h \
+    fournisseur.h \
+    gestionfourcmd.h \
     information.h \
     mainwindow.h \
     personnel.h \
@@ -46,6 +52,7 @@ HEADERS += \
 
 FORMS += \
     client_fidelite.ui \
+    gestionfourcmd.ui \
     mainwindow.ui \
     personnel.ui \
     prodcat.ui

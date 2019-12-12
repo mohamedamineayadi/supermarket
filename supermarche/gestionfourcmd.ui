@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>personnel</class>
- <widget class="QWidget" name="personnel">
+ <class>Gestionfourcmd</class>
+ <widget class="QWidget" name="Gestionfourcmd">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>762</width>
-    <height>525</height>
+    <width>877</width>
+    <height>683</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QTabWidget" name="tabWidget">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>20</y>
+     <x>60</x>
+     <y>70</y>
      <width>741</width>
      <height>481</height>
     </rect>
@@ -30,9 +30,9 @@
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
-     <string>Information</string>
+     <string>gestion fournisseur</string>
     </attribute>
-    <widget class="QTableView" name="tabinformation">
+    <widget class="QTableView" name="tabfournisseur">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -42,7 +42,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_supprimer">
+    <widget class="QPushButton" name="pushButton_supprimer_fourn">
      <property name="geometry">
       <rect>
        <x>630</x>
@@ -58,7 +58,7 @@
       <string>Supprimer</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_supprimer">
+    <widget class="QLineEdit" name="lineEdit_supprimer_fourn">
      <property name="geometry">
       <rect>
        <x>510</x>
@@ -71,9 +71,9 @@
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>440</x>
+       <x>400</x>
        <y>10</y>
-       <width>81</width>
+       <width>101</width>
        <height>20</height>
       </rect>
      </property>
@@ -81,10 +81,10 @@
       <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
      </property>
      <property name="text">
-      <string>Identifiant :</string>
+      <string>codefournisseur</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_ajouter">
+    <widget class="QPushButton" name="pushButton_ajouter_four">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -101,7 +101,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string>Ajouter</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_modifier">
+    <widget class="QPushButton" name="pushButton_pushButton_modifier_fourn">
      <property name="geometry">
       <rect>
        <x>130</x>
@@ -117,7 +117,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string>Modifier</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_id">
+    <widget class="QLineEdit" name="lineEdit_codefourn_ajout">
      <property name="geometry">
       <rect>
        <x>110</x>
@@ -127,7 +127,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       </rect>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_nom">
+    <widget class="QLineEdit" name="lineEdit_nomfourn_ajout">
      <property name="geometry">
       <rect>
        <x>110</x>
@@ -137,7 +137,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       </rect>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_prenom">
+    <widget class="QLineEdit" name="lineEdit_adresse_ajout">
      <property name="geometry">
       <rect>
        <x>110</x>
@@ -160,15 +160,15 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
      </property>
      <property name="text">
-      <string>Sexe</string>
+      <string>telephone</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
-       <x>50</x>
+       <x>10</x>
        <y>300</y>
-       <width>51</width>
+       <width>91</width>
        <height>20</height>
       </rect>
      </property>
@@ -176,7 +176,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
      </property>
      <property name="text">
-      <string>Identifiant</string>
+      <string>Codefournisseur</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_4">
@@ -208,53 +208,23 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
      </property>
      <property name="text">
-      <string>Prenom</string>
+      <string>Adresse</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_etat">
+    <widget class="QLineEdit" name="lineEdit_fax_ajout">
      <property name="geometry">
       <rect>
-       <x>340</x>
-       <y>300</y>
+       <x>460</x>
+       <y>290</y>
        <width>151</width>
        <height>20</height>
       </rect>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_adresse">
+    <widget class="QLineEdit" name="lineEdit_email_ajout">
      <property name="geometry">
       <rect>
-       <x>340</x>
-       <y>330</y>
-       <width>151</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_departement">
-     <property name="geometry">
-      <rect>
-       <x>340</x>
-       <y>360</y>
-       <width>151</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_salaire">
-     <property name="geometry">
-      <rect>
-       <x>570</x>
-       <y>300</y>
-       <width>151</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_commision">
-     <property name="geometry">
-      <rect>
-       <x>570</x>
+       <x>460</x>
        <y>330</y>
        <width>151</width>
        <height>20</height>
@@ -264,8 +234,8 @@ font: 8pt &quot;MV Boli&quot;;</string>
     <widget class="QLabel" name="label_6">
      <property name="geometry">
       <rect>
-       <x>270</x>
-       <y>300</y>
+       <x>390</x>
+       <y>290</y>
        <width>47</width>
        <height>13</height>
       </rect>
@@ -274,14 +244,14 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
      </property>
      <property name="text">
-      <string>Etat</string>
+      <string>fax</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_7">
      <property name="geometry">
       <rect>
-       <x>270</x>
-       <y>330</y>
+       <x>390</x>
+       <y>340</y>
        <width>47</width>
        <height>13</height>
       </rect>
@@ -290,110 +260,10 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
      </property>
      <property name="text">
-      <string>Adresse</string>
+      <string>email</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_8">
-     <property name="geometry">
-      <rect>
-       <x>270</x>
-       <y>360</y>
-       <width>71</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
-     </property>
-     <property name="text">
-      <string>Departement</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_9">
-     <property name="geometry">
-      <rect>
-       <x>510</x>
-       <y>300</y>
-       <width>47</width>
-       <height>13</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
-     </property>
-     <property name="text">
-      <string>Salaire</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_10">
-     <property name="geometry">
-      <rect>
-       <x>510</x>
-       <y>330</y>
-       <width>61</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
-     </property>
-     <property name="text">
-      <string>Commision</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_11">
-     <property name="geometry">
-      <rect>
-       <x>510</x>
-       <y>360</y>
-       <width>141</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
-     </property>
-     <property name="text">
-      <string>Nombre de presence</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_12">
-     <property name="geometry">
-      <rect>
-       <x>520</x>
-       <y>380</y>
-       <width>101</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
-     </property>
-     <property name="text">
-      <string>Nombre d'absence</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_nbr_prs">
-     <property name="geometry">
-      <rect>
-       <x>620</x>
-       <y>360</y>
-       <width>31</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_nbr_abs">
-     <property name="geometry">
-      <rect>
-       <x>620</x>
-       <y>380</y>
-       <width>31</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_sexe">
+    <widget class="QLineEdit" name="lineEdit_teleph_ajout">
      <property name="geometry">
       <rect>
        <x>110</x>
@@ -403,7 +273,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       </rect>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_recherche">
+    <widget class="QPushButton" name="pushButton_recherche_fourn">
      <property name="geometry">
       <rect>
        <x>560</x>
@@ -419,7 +289,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string>Recheche</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_recherche">
+    <widget class="QLineEdit" name="lineEdit_recherche_fourn">
      <property name="geometry">
       <rect>
        <x>410</x>
@@ -432,36 +302,20 @@ font: 8pt &quot;MV Boli&quot;;</string>
     <widget class="QLabel" name="label_13">
      <property name="geometry">
       <rect>
-       <x>350</x>
+       <x>320</x>
        <y>240</y>
-       <width>61</width>
-       <height>20</height>
+       <width>91</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
      </property>
      <property name="text">
-      <string>Identifiant</string>
+      <string>codefournisseur</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_tri">
-     <property name="geometry">
-      <rect>
-       <x>640</x>
-       <y>240</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.974874 rgba(235, 220, 61, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));font: 8pt &quot;MV Boli&quot;;</string>
-     </property>
-     <property name="text">
-      <string>TRI PAR ID</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_actualiser">
+    <widget class="QPushButton" name="pushButton_actualiser_fourn">
      <property name="geometry">
       <rect>
        <x>220</x>
@@ -669,22 +523,6 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <pixmap>../ornge.png</pixmap>
      </property>
     </widget>
-    <widget class="QLabel" name="label_36">
-     <property name="geometry">
-      <rect>
-       <x>620</x>
-       <y>360</y>
-       <width>31</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap>../ornge.png</pixmap>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_37">
      <property name="geometry">
       <rect>
@@ -733,9 +571,25 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string>Quitter</string>
      </property>
     </widget>
+    <widget class="QPushButton" name="pushButton_chercher">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>300</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.974874 rgba(235, 220, 61, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));
+font: 8pt &quot;MV Boli&quot;;</string>
+     </property>
+     <property name="text">
+      <string>chercher</string>
+     </property>
+    </widget>
     <zorder>label_38</zorder>
     <zorder>label_37</zorder>
-    <zorder>label_36</zorder>
     <zorder>label_35</zorder>
     <zorder>label_34</zorder>
     <zorder>label_33</zorder>
@@ -747,47 +601,37 @@ font: 8pt &quot;MV Boli&quot;;</string>
     <zorder>label_27</zorder>
     <zorder>label_24</zorder>
     <zorder>label_23</zorder>
-    <zorder>tabinformation</zorder>
-    <zorder>pushButton_supprimer</zorder>
-    <zorder>lineEdit_supprimer</zorder>
+    <zorder>tabfournisseur</zorder>
+    <zorder>pushButton_supprimer_fourn</zorder>
+    <zorder>lineEdit_supprimer_fourn</zorder>
     <zorder>label</zorder>
-    <zorder>pushButton_ajouter</zorder>
-    <zorder>pushButton_modifier</zorder>
-    <zorder>lineEdit_id</zorder>
-    <zorder>lineEdit_nom</zorder>
-    <zorder>lineEdit_prenom</zorder>
+    <zorder>pushButton_ajouter_four</zorder>
+    <zorder>pushButton_pushButton_modifier_fourn</zorder>
+    <zorder>lineEdit_codefourn_ajout</zorder>
+    <zorder>lineEdit_nomfourn_ajout</zorder>
+    <zorder>lineEdit_adresse_ajout</zorder>
     <zorder>label_2</zorder>
     <zorder>label_3</zorder>
     <zorder>label_4</zorder>
     <zorder>label_5</zorder>
-    <zorder>lineEdit_etat</zorder>
-    <zorder>lineEdit_adresse</zorder>
-    <zorder>lineEdit_departement</zorder>
-    <zorder>lineEdit_salaire</zorder>
-    <zorder>lineEdit_commision</zorder>
+    <zorder>lineEdit_fax_ajout</zorder>
+    <zorder>lineEdit_email_ajout</zorder>
     <zorder>label_6</zorder>
     <zorder>label_7</zorder>
-    <zorder>label_8</zorder>
-    <zorder>label_9</zorder>
-    <zorder>label_10</zorder>
-    <zorder>label_11</zorder>
-    <zorder>label_12</zorder>
-    <zorder>lineEdit_nbr_prs</zorder>
-    <zorder>lineEdit_nbr_abs</zorder>
-    <zorder>lineEdit_sexe</zorder>
-    <zorder>pushButton_recherche</zorder>
-    <zorder>lineEdit_recherche</zorder>
+    <zorder>lineEdit_teleph_ajout</zorder>
+    <zorder>pushButton_recherche_fourn</zorder>
+    <zorder>lineEdit_recherche_fourn</zorder>
     <zorder>label_13</zorder>
-    <zorder>pushButton_tri</zorder>
-    <zorder>pushButton_actualiser</zorder>
+    <zorder>pushButton_actualiser_fourn</zorder>
     <zorder>label_21</zorder>
     <zorder>pushButton_2</zorder>
+    <zorder>pushButton_chercher</zorder>
    </widget>
    <widget class="QWidget" name="tab_2">
     <attribute name="title">
-     <string>Congé</string>
+     <string>commandes d'achats</string>
     </attribute>
-    <widget class="QTableView" name="tabconge">
+    <widget class="QTableView" name="tabcmd">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -797,7 +641,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       </rect>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="pushButton_supp_cmd">
      <property name="geometry">
       <rect>
        <x>650</x>
@@ -813,7 +657,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string>Supprimer</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_id_3">
+    <widget class="QLineEdit" name="lineEdit_refcmd_supp">
      <property name="geometry">
       <rect>
        <x>530</x>
@@ -823,7 +667,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       </rect>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_id_conge">
+    <widget class="QLineEdit" name="lineEdit_refcmd_ajout">
      <property name="geometry">
       <rect>
        <x>120</x>
@@ -833,7 +677,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       </rect>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_id_2">
+    <widget class="QLineEdit" name="lineEdit_date_ajout">
      <property name="geometry">
       <rect>
        <x>120</x>
@@ -843,7 +687,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       </rect>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_nbr_conge">
+    <widget class="QLineEdit" name="lineEdit_codefcmd">
      <property name="geometry">
       <rect>
        <x>120</x>
@@ -853,21 +697,11 @@ font: 8pt &quot;MV Boli&quot;;</string>
       </rect>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_debut_conge">
+    <widget class="QLineEdit" name="lineEdit_idprod_ajout">
      <property name="geometry">
       <rect>
-       <x>420</x>
-       <y>350</y>
-       <width>141</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_fin_conge">
-     <property name="geometry">
-      <rect>
-       <x>420</x>
-       <y>380</y>
+       <x>540</x>
+       <y>340</y>
        <width>141</width>
        <height>20</height>
       </rect>
@@ -886,7 +720,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
      </property>
      <property name="text">
-      <string>Identifiant du conge</string>
+      <string>ref cmd</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_15">
@@ -902,7 +736,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
      </property>
      <property name="text">
-      <string>Identifiant</string>
+      <string>date</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_16">
@@ -918,14 +752,14 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
      </property>
      <property name="text">
-      <string>Nombe de conge</string>
+      <string>codef</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_17">
      <property name="geometry">
       <rect>
-       <x>330</x>
-       <y>350</y>
+       <x>440</x>
+       <y>340</y>
        <width>91</width>
        <height>20</height>
       </rect>
@@ -934,26 +768,10 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
      </property>
      <property name="text">
-      <string>Debut du conge</string>
+      <string>id produit</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_18">
-     <property name="geometry">
-      <rect>
-       <x>340</x>
-       <y>380</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
-     </property>
-     <property name="text">
-      <string>Fin du conge</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_ajouter_2">
+    <widget class="QPushButton" name="pushButton_ajouter_cmd">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -969,7 +787,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string>Ajouter</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_modifier_2">
+    <widget class="QPushButton" name="pushButton_modifier_cmd">
      <property name="geometry">
       <rect>
        <x>120</x>
@@ -985,7 +803,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string>Modifier</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="pushButton_actualisercmd">
      <property name="geometry">
       <rect>
        <x>200</x>
@@ -1001,12 +819,12 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string>Actualiser</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_5">
+    <widget class="QPushButton" name="pushButton_tri_2">
      <property name="geometry">
       <rect>
        <x>650</x>
        <y>260</y>
-       <width>75</width>
+       <width>81</width>
        <height>23</height>
       </rect>
      </property>
@@ -1014,10 +832,10 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.974874 rgba(235, 220, 61, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));font: 8pt &quot;MV Boli&quot;;</string>
      </property>
      <property name="text">
-      <string>TRI PAR ID</string>
+      <string>TRI PAR REF</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_6">
+    <widget class="QPushButton" name="pushButton_recherchecmd">
      <property name="geometry">
       <rect>
        <x>570</x>
@@ -1033,7 +851,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string>Recherche</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_recherche_2">
+    <widget class="QLineEdit" name="lineEdit_recherchecmd">
      <property name="geometry">
       <rect>
        <x>432</x>
@@ -1053,13 +871,13 @@ font: 8pt &quot;MV Boli&quot;;</string>
       </rect>
      </property>
      <property name="text">
-      <string>Identifiant</string>
+      <string>ref cmd</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_20">
      <property name="geometry">
       <rect>
-       <x>376</x>
+       <x>360</x>
        <y>260</y>
        <width>51</width>
        <height>20</height>
@@ -1069,7 +887,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
      </property>
      <property name="text">
-      <string>Recherche</string>
+      <string>ref cmd</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_22">
@@ -1232,7 +1050,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <pixmap>../ornge.png</pixmap>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="pushButton_quitter">
      <property name="geometry">
       <rect>
        <x>650</x>
@@ -1248,6 +1066,22 @@ font: 8pt &quot;MV Boli&quot;;</string>
       <string>Quitter</string>
      </property>
     </widget>
+    <widget class="QPushButton" name="pushButton_cherchercmd">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>340</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 178, 102, 255), stop:0.974874 rgba(235, 220, 61, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));font: 8pt &quot;MV Boli&quot;;</string>
+     </property>
+     <property name="text">
+      <string>chercher</string>
+     </property>
+    </widget>
     <zorder>label_45</zorder>
     <zorder>label_44</zorder>
     <zorder>label_41</zorder>
@@ -1257,29 +1091,28 @@ font: 8pt &quot;MV Boli&quot;;</string>
     <zorder>label_39</zorder>
     <zorder>label_26</zorder>
     <zorder>label_25</zorder>
-    <zorder>tabconge</zorder>
-    <zorder>pushButton</zorder>
-    <zorder>lineEdit_id_3</zorder>
-    <zorder>lineEdit_id_conge</zorder>
-    <zorder>lineEdit_id_2</zorder>
-    <zorder>lineEdit_nbr_conge</zorder>
-    <zorder>lineEdit_debut_conge</zorder>
-    <zorder>lineEdit_fin_conge</zorder>
+    <zorder>tabcmd</zorder>
+    <zorder>pushButton_supp_cmd</zorder>
+    <zorder>lineEdit_refcmd_supp</zorder>
+    <zorder>lineEdit_refcmd_ajout</zorder>
+    <zorder>lineEdit_date_ajout</zorder>
+    <zorder>lineEdit_codefcmd</zorder>
+    <zorder>lineEdit_idprod_ajout</zorder>
     <zorder>label_14</zorder>
     <zorder>label_15</zorder>
     <zorder>label_16</zorder>
     <zorder>label_17</zorder>
-    <zorder>label_18</zorder>
-    <zorder>pushButton_ajouter_2</zorder>
-    <zorder>pushButton_modifier_2</zorder>
-    <zorder>pushButton_4</zorder>
-    <zorder>pushButton_5</zorder>
-    <zorder>pushButton_6</zorder>
-    <zorder>lineEdit_recherche_2</zorder>
+    <zorder>pushButton_ajouter_cmd</zorder>
+    <zorder>pushButton_modifier_cmd</zorder>
+    <zorder>pushButton_actualisercmd</zorder>
+    <zorder>pushButton_tri_2</zorder>
+    <zorder>pushButton_recherchecmd</zorder>
+    <zorder>lineEdit_recherchecmd</zorder>
     <zorder>label_19</zorder>
     <zorder>label_20</zorder>
     <zorder>label_22</zorder>
-    <zorder>pushButton_3</zorder>
+    <zorder>pushButton_quitter</zorder>
+    <zorder>pushButton_cherchercmd</zorder>
    </widget>
   </widget>
  </widget>

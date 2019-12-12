@@ -33,3 +33,11 @@ void MainWindow::on_pushButton_3_clicked()
     pro = new prodcat(this);
     pro->show();
 }
+
+
+
+void MainWindow::on_pushButton_5_clicked()
+{
+    four = new Gestionfourcmd(this);
+    four->show();
+}
