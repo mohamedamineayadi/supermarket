@@ -1,5 +1,6 @@
+
 QT       += core gui
-QT       += core gui sql
+QT       += core gui sql serialport
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = supermarche
 TEMPLATE = app
@@ -18,15 +19,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    arduino.cpp \
+    arduino_capteur.cpp \
     categorie.cpp \
     client.cpp \
     client_fidelite.cpp \
-    commandes_achats.cpp \
     conge.cpp \
     connexion.cpp \
     fidelite.cpp \
-    fournisseur.cpp \
-    gestionfourcmd.cpp \
     information.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -35,15 +35,14 @@ SOURCES += \
     produit.cpp
 
 HEADERS += \
+    arduino.h \
+    arduino_capteur.h \
     categorie.h \
     client.h \
     client_fidelite.h \
-    commandes_achats.h \
     conge.h \
     connexion.h \
     fidelite.h \
-    fournisseur.h \
-    gestionfourcmd.h \
     information.h \
     mainwindow.h \
     personnel.h \
@@ -51,8 +50,8 @@ HEADERS += \
     produit.h
 
 FORMS += \
+    arduino_capteur.ui \
     client_fidelite.ui \
-    gestionfourcmd.ui \
     mainwindow.ui \
     personnel.ui \
     prodcat.ui

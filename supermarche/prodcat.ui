@@ -67,7 +67,7 @@
      <string notr="true">font: 8pt &quot;MV Boli&quot;;</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -671,6 +671,22 @@ font: 8pt &quot;MV Boli&quot;;</string>
        <pixmap>../../Downloads/super v2.0/blue.png</pixmap>
       </property>
      </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>350</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../Downloads/super v2.0/blue.png</pixmap>
+      </property>
+     </widget>
      <widget class="QLabel" name="label_24">
       <property name="geometry">
        <rect>
@@ -725,6 +741,7 @@ font: 8pt &quot;MV Boli&quot;;</string>
      </widget>
      <zorder>label_25</zorder>
      <zorder>label_24</zorder>
+     <zorder>label_18</zorder>
      <zorder>label_17</zorder>
      <zorder>label_16</zorder>
      <zorder>label_15</zorder>

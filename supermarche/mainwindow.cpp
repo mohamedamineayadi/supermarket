@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include"personnel.h"
+#include"arduino_capteur.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -34,10 +35,8 @@ void MainWindow::on_pushButton_3_clicked()
     pro->show();
 }
 
-
-
-void MainWindow::on_pushButton_5_clicked()
+void MainWindow::on_pushButton_6_clicked()
 {
-    four = new Gestionfourcmd(this);
-    four->show();
+    ard = new arduino_capteur(this);
+    ard->show();
 }
