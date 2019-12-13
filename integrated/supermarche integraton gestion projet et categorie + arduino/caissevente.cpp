@@ -1,4 +1,5 @@
 #include "caissevente.h"
+#include "caisses.h"
 #include "ui_caissevente.h"
 #include <QMessageBox>
 #include <QtDebug>
@@ -37,6 +38,12 @@ CaisseVente::CaisseVente(QWidget *parent) :
     ui->lineEdit_articlename_update->setEnabled(0);
     ui->dateTimeEdit_find->setEnabled(0);
     ui->dateTimeEdit_update->setEnabled(0);
+
+    QSqlQueryModel * model= new QSqlQueryModel();
+    model->setQuery("select ID_CAISSE from CAISSES");
+    ui->comboBox_select->setModel(model);
+
+    ui->tableView_displaycaisse->setModel(tmpcaisse.afficher_caisses());
 
 }
 
@@ -143,4 +150,34 @@ void CaisseVente::on_pushButton_cancelmodify_clicked()
 {
     ui->lineEdit_refcmd_update->setText("");
     ui->lineEdit_prixcmdv_update->setText("");
+}
+
+void CaisseVente::on_comboBox_select_currentIndexChanged(int index)
+{
+
+}
+
+void CaisseVente::on_pushButton_validerselect_clicked()
+{
+
+    int  idcaisse =ui->comboBox_select->currentText().toInt();
+
+
+           caisses test= tmpcaisse.FindExist_caisses(idcaisse);
+
+           if (test.GetID_CAISSE()==idcaisse)
+           {
+               ui->tableView_displaycaisse->setModel(tmpcaisse.DisplayFind_caisses(idcaisse));
+               mSystemTrayIcon->showMessage(tr("Notification!"),tr("Element Exist!"));
+           }
+
+
+           else
+           {
+
+               QMessageBox::critical(nullptr, QObject::tr("Critical Error"),
+               QObject::tr("La commande n'est pas disponible !.\n"
+                            "Click Cancel to exit."), QMessageBox::Cancel);
+
+           }
 }

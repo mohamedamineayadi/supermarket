@@ -22,6 +22,7 @@ SOURCES += \
     arduino.cpp \
     arduino_capteur.cpp \
     arduino_tapis.cpp \
+    caisses.cpp \
     caissevente.cpp \
     categorie.cpp \
     client.cpp \
@@ -42,6 +43,7 @@ HEADERS += \
     arduino.h \
     arduino_capteur.h \
     arduino_tapis.h \
+    caisses.h \
     caissevente.h \
     categorie.h \
     client.h \

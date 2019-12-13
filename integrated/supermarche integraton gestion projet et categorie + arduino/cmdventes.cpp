@@ -29,6 +29,8 @@ QString cmdventes::GetID_PRODUIT(){return  ID_PRODUIT;}
 QString cmdventes::GetHEURE_CMD(){return  HEURE_CMD;}
 int cmdventes::GetPRIX_CMDV(){return PRIX_CMDV;}
 
+
+
 QSortFilterProxyModel * cmdventes::afficher()
 {
 QSqlQueryModel * _model= new QSqlQueryModel();
@@ -94,6 +96,7 @@ QSqlQueryModel * cmdventes::DisplayFind(int ref)
     return model;
 }
 
+
 cmdventes cmdventes::FindExist(int REFCMDV)
 {
      cmdventes *cmdv= new cmdventes();
@@ -118,6 +121,8 @@ cmdventes(REFCMDV,DATE_CMD,ID_CAISSE,ID_PRODUIT,ID_CLIENT,HEURE_CMD,PRIX_CMDV);
 
       return *cmdv;
  }
+
+
 
 bool cmdventes::CancelCMD(int ref)
 {

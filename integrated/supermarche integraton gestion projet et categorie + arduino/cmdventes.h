@@ -18,6 +18,7 @@ public:
     QString GetHEURE_CMD();
     int GetPRIX_CMDV();
     QSortFilterProxyModel * afficher();
+    QSortFilterProxyModel * afficher_caisses();
     bool ajouter();
     QSqlQueryModel * DisplayFind(int);
     QSqlQueryModel * sortAZ();
@@ -28,8 +29,8 @@ public:
 private:
     QString DATE_CMD,ID_CAISSE,ID_PRODUIT,ID_CLIENT,HEURE_CMD;
     int REFCMDV,PRIX_CMDV;
-
-
 };
+
+
 
 #endif // CMDVENTES_H

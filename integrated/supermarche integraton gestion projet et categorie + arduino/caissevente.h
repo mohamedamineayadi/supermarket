@@ -6,6 +6,7 @@
 #include <QSortFilterProxyModel>
 #include <QMainWindow>
 #include "cmdventes.h"
+#include "caisses.h"
 
 namespace Ui {
 class CaisseVente;
@@ -35,9 +36,14 @@ private slots:
 
     void on_pushButton_cancelmodify_clicked();
 
+    void on_comboBox_select_currentIndexChanged(int index);
+
+    void on_pushButton_validerselect_clicked();
+
 private:
     Ui::CaisseVente *ui;
-    cmdventes tmpcmd;
+   cmdventes tmpcmd;
+    caisses tmpcaisse;
     QSystemTrayIcon *mSystemTrayIcon;
 
 };
